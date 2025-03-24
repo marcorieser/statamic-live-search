@@ -1,20 +1,20 @@
 <!-- statamic:hide -->
 # Statamic Live Search
 ![Statamic 3.0+](https://img.shields.io/badge/Statamic-3.0+-FF269E?style=for-the-badge&link=https://statamic.com)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/jonassiewertsen/statamic-live-search.svg?style=for-the-badge)](https://packagist.org/packages/jonassiewertsen/statamic-live-search)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/marcorieser/statamic-live-search.svg?style=for-the-badge)](https://packagist.org/packages/marcorieser/statamic-live-search)
 <!-- /statamic:hide -->
 
 > A Statamic Live Search realised with [Laravel Livewire](https://laravel-livewire.com/).
 
 It's fast to implement, hooks into the Statamic 3 core search and updates search results as you type. 
 
-<img src="https://github.com/jonassiewertsen/statamic-live-search/blob/main/statamic-live-serach.gif?raw=true" alt="Statamic Live Search">
+<img src="https://github.com/marcorieser/statamic-live-search/blob/main/statamic-live-serach.gif?raw=true" alt="Statamic Live Search">
 
-This Package extends my third-party [Statamic 3 Livewire integration](https://github.com/jonassiewertsen/statamic-livewire).
+This Package extends my third-party [Statamic 3 Livewire integration](https://github.com/marcorieser/statamic-livewire).
 
 ## No need for live search?
 
-Check out my [Statamic 3 Livewire integration](https://github.com/jonassiewertsen/statamic-livewire).
+Check out my [Statamic 3 Livewire integration](https://github.com/marcorieser/statamic-livewire).
 
 ## Upgrading
 
@@ -23,7 +23,7 @@ Check out the upgrade guide: [Upgrade Guide](#upgrade-guide)
 ## Installation
 Pull in the package with composer
 ```bash
-composer require jonassiewertsen/statamic-live-search
+composer require marcorieser/statamic-live-search
 ```
 
 ## Requirements
@@ -36,7 +36,7 @@ The option to create your first search provides a quick-start example to get you
 
 As the statamic-live-search extends the statamic-livewire addon, the setup is exactly the same and a deeper understanding might be useful. See the link below for more information.
 
-[Statamic 3 Livewire integration Docs](https://github.com/jonassiewertsen/statamic-livewire#general-documentation)
+[Statamic 3 Livewire integration Docs](https://github.com/marcorieser/statamic-livewire#general-documentation)
 
 ## Create your first search
 
@@ -251,4 +251,3 @@ I love to share with the community. Nevertheless, it does take a lot of work, ti
 
 ## License 
 This plugin is published under the MIT license. Feel free to use it and remember to spread the love.
-

@@ -1,44 +1,50 @@
 {
-  "name": "jonassiewertsen/statamic-live-search",
-  "description": "A Statamic Live Search realized with Laravel Livewire.",
-  "keywords": [
-    "Statamic",
-    "Addon",
-    "Plugin",
-    "Livewire",
-    "Live",
-    "Search"
-  ],
-  "license": "MIT",
-  "type": "statamic-addon",
-  "autoload": {
-    "psr-4": {
-      "Jonassiewertsen\\LiveSearch\\": "src"
-    }
-  },
-  "authors": [
-    {
-      "name": "Jonas Siewertsen"
-    }
-  ],
-  "support": {
-    "email": "mail@jonassiewertsen.com"
-  },
-  "require": {
-    "php": "^8.1",
-    "illuminate/support": "^10.0|^11.0",
-    "statamic/cms": "^4.23.2|^5.0",
-    "jonassiewertsen/statamic-livewire": "^3.0"
-  },
-  "extra": {
-    "statamic": {
-      "name": "Live Search",
-      "description": "A Statamic Live Search realized with Laravel Livewire."
+    "name": "marcorieser/statamic-live-search",
+    "description": "A Statamic Live Search realized with Laravel Livewire.",
+    "keywords": [
+        "Statamic",
+        "Addon",
+        "Plugin",
+        "Livewire",
+        "Live",
+        "Search"
+    ],
+    "license": "MIT",
+    "type": "statamic-addon",
+    "autoload": {
+        "psr-4": {
+            "Jonassiewertsen\\LiveSearch\\": "src"
+        }
     },
-    "laravel": {
-      "providers": [
-        "Jonassiewertsen\\LiveSearch\\ServiceProvider"
-      ]
+    "authors": [
+        {
+            "name": "Marco Rieser",
+            "homepage": "https://rieser.dev"
+        },
+        {
+            "name": "Jonas Siewertsen",
+            "homepage": "https://jonassiewertsen.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/marcorieser/statamic-live-search/issues",
+        "docs": "https://github.com/marcorieser/statamic-live-search"
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0",
+        "statamic/cms": "^4.23.2|^5.0",
+        "marcorieser/statamic-livewire": "^3.0"
+    },
+    "extra": {
+        "statamic": {
+            "name": "Live Search",
+            "description": "A Statamic Live Search realized with Laravel Livewire."
+        },
+        "laravel": {
+            "providers": [
+                "Jonassiewertsen\\LiveSearch\\ServiceProvider"
+            ]
+        }
     }
-  }
 }
