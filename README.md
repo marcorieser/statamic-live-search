@@ -247,7 +247,7 @@ Thanks to:
 ## Support
 I love to share with the community. Nevertheless, it does take a lot of work, time and effort. 
 
-[Sponsor me on GitHub](https://github.com/sponsors/jonassiewertsen/) to support my work and this addon.
+[Sponsor me on GitHub](https://github.com/sponsors/marcorieser/) to support my work and this addon.
 
 ## License 
 This plugin is published under the MIT license. Feel free to use it and remember to spread the love.
