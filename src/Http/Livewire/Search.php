@@ -1,8 +1,8 @@
 <?php
 
-namespace Jonassiewertsen\LiveSearch\Http\Livewire;
+namespace MarcoRieser\LiveSearch\Http\Livewire;
 
-use Jonassiewertsen\LiveSearch\Traits\SearchFacade;
+use MarcoRieser\LiveSearch\Traits\SearchFacade;
 use Livewire\Component;
 
 abstract class Search extends Component

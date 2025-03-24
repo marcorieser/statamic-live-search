@@ -185,7 +185,7 @@ The parts we have provided have been built in a modular fashion so you can easil
 ```php
 namespace App\Your\Namespace;
 
-use Jonassiewertsen\LiveSearch\Http\Livewire\Search;
+use MarcoRieser\LiveSearch\Http\Livewire\Search;
 
 class YourCustomLivewireController extends Search
 {
@@ -216,7 +216,7 @@ It might be that you want to customize the name of the query string or that you 
 
 You can import the SearchFacade trait and write a complete Livewire Controller as you need it. 
 
-`use Jonassiewertsen\LiveSearch\Traits\SearchFacade;`
+`use MarcoRieser\LiveSearch\Traits\SearchFacade;`
 
 The method we have provided expects the following parameters:
 `search($query, ?string $index = null, ?int $limit = 10)`

@@ -1,6 +1,6 @@
 <?php
 
-namespace Jonassiewertsen\LiveSearch\Traits;
+namespace MarcoRieser\LiveSearch\Traits;
 
 use Illuminate\Support\Collection;
 use Statamic\Facades\Search as StatamicSearchFacade;

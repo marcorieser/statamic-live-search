@@ -1,8 +1,8 @@
 <?php
 
-namespace Jonassiewertsen\LiveSearch;
+namespace MarcoRieser\LiveSearch;
 
-use Jonassiewertsen\LiveSearch\Http\Livewire\LiveSearch;
+use MarcoRieser\LiveSearch\Http\Livewire\LiveSearch;
 use Livewire\Livewire;
 use Statamic\Providers\AddonServiceProvider;
 

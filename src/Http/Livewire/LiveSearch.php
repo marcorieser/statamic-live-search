@@ -1,6 +1,6 @@
 <?php
 
-namespace Jonassiewertsen\LiveSearch\Http\Livewire;
+namespace MarcoRieser\LiveSearch\Http\Livewire;
 
 class LiveSearch extends Search
 {
