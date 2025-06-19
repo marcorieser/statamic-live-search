@@ -108,7 +108,7 @@ If you need augmented values - as in the case of images - it's easiest to use An
 <livewire:search :template='partials.your-own-search-template' />
 ```
 
-If the template name is `partials.search`, the template is expected at `resources\views\partials\search.blade.php` or `resources\views\partials\search.antlers.php`.
+If the template name is `partials.search`, the template is expected at `resources\views\partials\search.blade.php` or `resources\views\partials\search.antlers.html`.
 
 This might be a solid starting point for your own template:
 
