@@ -1,4 +1,8 @@
-# Auto detect text files and perform LF normalization
 * text=auto
-
+/.github export-ignore
+.editorconfig export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+.prettierignore export-ignore
+.prettierrc export-ignore
 statamic-live-search.gif export-ignore
