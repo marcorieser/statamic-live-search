@@ -36,6 +36,10 @@
         "statamic/cms": "^4.23.2|^5.0",
         "marcorieser/statamic-livewire": "^4.0"
     },
+    "require-dev": {
+        "laravel/pint": "^1.21",
+        "spatie/laravel-ray": "^1.0"
+    },
     "extra": {
         "statamic": {
             "name": "Live Search",
