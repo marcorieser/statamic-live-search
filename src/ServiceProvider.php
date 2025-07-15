@@ -2,26 +2,35 @@
 
 namespace MarcoRieser\LiveSearch;
 
-use MarcoRieser\LiveSearch\Http\Livewire\LiveSearch;
 use Livewire\Livewire;
+use MarcoRieser\LiveSearch\Http\Livewire\Search;
 use Statamic\Providers\AddonServiceProvider;
 
 class ServiceProvider extends AddonServiceProvider
 {
+    protected $viewNamespace = 'live-search';
+
     protected $publishAfterInstall = false;
 
-    public function boot(): void
+    public function bootAddon(): void
     {
-        parent::boot();
+        $this->bootSearchComponent();
+        $this->bootPublishableViews();
+    }
 
-        Livewire::component('search', LiveSearch::class);
+    protected function bootSearchComponent(): void
+    {
+        Livewire::component('search', Search::class);
+    }
 
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'live-search');
-
-        if ($this->app->runningInConsole()) {
-            $this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/vendor/live-search'),
-            ], 'live-search:views');
+    protected function bootPublishableViews(): void
+    {
+        if (! $this->app->runningInConsole()) {
+            return;
         }
+
+        $this->publishes([
+            __DIR__.'/../resources/views' => resource_path('views/vendor/live-search'),
+        ], 'live-search:views');
     }
 }
