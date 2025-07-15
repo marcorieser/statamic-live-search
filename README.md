@@ -8,7 +8,7 @@
 
 It's fast to implement, hooks into the Statamic 3 core search and updates search results as you type. 
 
-<img src="https://github.com/marcorieser/statamic-live-search/blob/main/statamic-live-serach.gif?raw=true" alt="Statamic Live Search">
+<img src="https://github.com/marcorieser/statamic-live-search/blob/main/statamic-live-search.gif?raw=true" alt="Statamic Live Search">
 
 This Package extends my third-party [Statamic 3 Livewire integration](https://github.com/marcorieser/statamic-livewire).
 
