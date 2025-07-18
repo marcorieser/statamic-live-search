@@ -3,7 +3,7 @@
 namespace MarcoRieser\LiveSearch;
 
 use Livewire\Livewire;
-use MarcoRieser\LiveSearch\Http\Livewire\Search;
+use MarcoRieser\LiveSearch\Http\Livewire\LiveSearch;
 use Statamic\Providers\AddonServiceProvider;
 
 class ServiceProvider extends AddonServiceProvider
@@ -18,7 +18,7 @@ class ServiceProvider extends AddonServiceProvider
 
     protected function bootSearchComponent(): void
     {
-        Livewire::component('search', Search::class);
+        Livewire::component('search', LiveSearch::class);
     }
 
     protected function bootPublishableViews(): void
