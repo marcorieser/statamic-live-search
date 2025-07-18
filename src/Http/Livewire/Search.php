@@ -9,21 +9,13 @@ use Livewire\Component;
 
 class Search extends Component
 {
-    public ?string $index = null;
-
-    public int $limit = 10;
-
-    public ?int $offset = null;
+    public string $q = '';
 
     public string $query = 'q';
 
-    public string $search = '';
-
-    public ?string $site = null;
-
-    public bool $supplement_data = true;
-
     public string $template = 'live-search::dropdown';
+
+    public array $data = [];
 
     public function render(): \Illuminate\Contracts\View\View|Application|Factory|View
     {
@@ -33,7 +25,7 @@ class Search extends Component
     protected function queryString(): array
     {
         return [
-            'search' => [
+            'q' => [
                 'as' => $this->query,
                 'except' => '',
             ],

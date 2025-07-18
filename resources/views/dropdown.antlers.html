@@ -11,24 +11,22 @@
     </div>
 
     <input
-        wire:model.live.debounce="search"
-        id="search"
-        name="search"
+        wire:model.live.debounce="q"
+        id="q"
+        name="q"
         class="block w-full rounded-md border border-transparent bg-gray-300 py-2 pl-10 pr-3 text-sm placeholder-gray-500 focus:border-white focus:bg-white focus:text-gray-900 focus:placeholder-gray-500 focus:outline-none focus:ring-white sm:text-sm"
         placeholder="{{ trans key="Search" }}"
         type="search"
     />
-    {{ if search }}
+    {{ if q }}
         <div class="absolute right-0 mt-2 w-64 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
             <div class="py-1 text-sm text-gray-700">
-                {{ search:results as="results" :for="search" :$index :$site :$limit :$offset :$supplement_data }}
-                    {{ if results }}
-                        {{ results }}
-                            <a href="{{ url }}" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-900">{{ title }}</a>
-                        {{ /results }}
+                {{ search:results :for="q" limit="10" }}
+                    {{ unless no_results }}
+                        <a href="{{ url }}" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-900">{{ title }}</a>
                     {{ else }}
                         <div class="block px-4 py-2">No results found</div>
-                    {{ /if }}
+                    {{ /unless }}
                 {{ /search:results }}
             </div>
         </div>
