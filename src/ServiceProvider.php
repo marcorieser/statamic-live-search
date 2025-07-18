@@ -10,8 +10,6 @@ class ServiceProvider extends AddonServiceProvider
 {
     protected $viewNamespace = 'live-search';
 
-    protected $publishAfterInstall = false;
-
     public function bootAddon(): void
     {
         $this->bootSearchComponent();
