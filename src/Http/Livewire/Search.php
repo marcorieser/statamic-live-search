@@ -15,7 +15,7 @@ class Search extends Component
 
     public string $template = 'live-search::dropdown';
 
-    public array $data = [];
+    public array $params = [];
 
     public function render(): \Illuminate\Contracts\View\View|Application|Factory|View
     {
