@@ -2,18 +2,33 @@
 
 namespace MarcoRieser\LiveSearch\Http\Livewire;
 
-use MarcoRieser\LiveSearch\Traits\SearchFacade;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Foundation\Application;
+use Illuminate\View\View;
 use Livewire\Component;
 
-abstract class Search extends Component
+class Search extends Component
 {
-    use SearchFacade;
+    public string $q = '';
 
-    public $q;
+    public string $query = 'q';
 
-    protected $queryString = [
-        'q' => ['except' => ''],
-    ];
+    public string $template = 'live-search::dropdown';
 
-    abstract public function render();
+    public array $params = [];
+
+    public function render(): \Illuminate\Contracts\View\View|Application|Factory|View
+    {
+        return view($this->template);
+    }
+
+    protected function queryString(): array
+    {
+        return [
+            'q' => [
+                'as' => $this->query,
+                'except' => '',
+            ],
+        ];
+    }
 }
