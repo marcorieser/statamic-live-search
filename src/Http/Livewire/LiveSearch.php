@@ -5,9 +5,10 @@ namespace MarcoRieser\LiveSearch\Http\Livewire;
 class LiveSearch extends Search
 {
     public $template;
+
     public $index;
 
-    public function mount(string $template = null, string $index = null)
+    public function mount(?string $template = null, ?string $index = null): void
     {
         // In case no template has been defined, we will fall back to a default layout.
         $this->template = $template ?? 'live-search::dropdown';
