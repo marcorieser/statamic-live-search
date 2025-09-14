@@ -13,7 +13,7 @@ class Search extends Component
 
     public string $query = 'q';
 
-    public string $template = 'live-search::dropdown';
+    public string $template = 'live-search::search';
 
     public array $params = [];
 
