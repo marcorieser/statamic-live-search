@@ -42,48 +42,22 @@ As the statamic-live-search extends the statamic-livewire addon, the setup is ex
 
 Add the `livewire:search` component to one of your templates and define your template.
 
-```html
-<!-- 
-### If using Antlers ###
--->
+```antlers
 <html>
 <head>
-    ...
     {{ livewire:styles }}
 </head>
 <body>
     {{ livewire:search }}
-   
-    <!-- Your stuff goes here -->
-
     ...
     {{ livewire:scripts }}
 </body>
 </html>
-
-<!-- 
-### If using Blade ###
--->
-<html>
-<head>
-    ...
-    @livewireStyles
-</head>
-<body>
-    <livewire:search />
-    
-    <!-- Your stuff goes here -->
-
-    ...
-    @livewireScripts
-</body>
-</html>
-
 ```
 
 ## Setup the template
 
-### Use the default dropdown layout
+### Use the default search layout
 
 To get you started as fast as possible, we provide a default template. You can publish it and edit it according to your needs. 
 
@@ -91,54 +65,14 @@ To get you started as fast as possible, we provide a default template. You can p
 php artisan vendor:publish --tag=live-search:views
 ```
 
-After publishing, you will find the template inside `resources/views/vendor/live-search/dropdown.blade.php`. It can be edited as you like.
+After publishing, you will find the template inside `resources/views/vendor/live-search/search.antlers.html`. It can be edited as you like.
 
 ### Use your own template
 
 Create your own template and put it anywhere you like. Define the template in the tag and you are ready to go.
 
-If you need augmented values - as in the case of images - it's easiest to use Antlers, so you don't need to worry about it.
-
-
-```html
-<!-- If using Antlers -->
+```antlers
 {{ livewire:search template='partials.your-own-search-template' }}
-
-<!-- If using Blade -->
-<livewire:search :template='partials.your-own-search-template' />
-```
-
-If the template name is `partials.search`, the template is expected at `resources\views\partials\search.blade.php` or `resources\views\partials\search.antlers.html`.
-
-This might be a solid starting point for your own template:
-
-#### Blade
-
-```html
-<div>
-    <input wire:model.live="q" type="search">
-
-    <ul>
-        @forelse($results as $result)
-            <li>{{ $result['title'] }}</li>
-        @empty
-            No matches found
-        @endforelse
-    </ul>
-</div>
-```
-
-#### Antlers
-```html
-<div>
-    <input wire:model.live="q" type="search">
-
-    <ul>
-        {{ results }}
-            <li>{{ title }}</li>
-        {{ /results }}
-    </ul>
-</div>
 ```
 
 ## Configure your index
@@ -159,12 +93,8 @@ A more specific search could look something like this:
 
 Remember to define the index in your component:
 
-```html
-<!-- If using Antlers -->
+```antlers
 {{ livewire:search template='partials.search' index='blog' }}
-
-<!-- If using Blade -->
-<livewire:search :template='partials.search' :index='blog' />
 ```
 
 To update your indexes run `php please search:update` [More information](https://statamic.dev/search#updating-indexes)
