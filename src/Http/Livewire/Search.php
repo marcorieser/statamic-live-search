@@ -2,14 +2,14 @@
 
 namespace MarcoRieser\LiveSearch\Http\Livewire;
 
-use MarcoRieser\LiveSearch\Traits\SearchFacade;
 use Livewire\Component;
+use MarcoRieser\LiveSearch\Traits\SearchFacade;
 
 abstract class Search extends Component
 {
     use SearchFacade;
 
-    public $q;
+    public $q = '';
 
     protected $queryString = [
         'q' => ['except' => ''],
