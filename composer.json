@@ -32,8 +32,8 @@
     },
     "require": {
         "php": "^8.1",
-        "illuminate/support": "^10.0|^11.0|^12.0",
-        "statamic/cms": "^4.23.2|^5.0",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+        "statamic/cms": "^4.23.2|^5.0|^6.0",
         "marcorieser/statamic-livewire": "^4.0|^5.0"
     },
     "extra": {
