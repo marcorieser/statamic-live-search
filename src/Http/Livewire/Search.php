@@ -9,7 +9,7 @@ abstract class Search extends Component
 {
     use SearchFacade;
 
-    public $q = '';
+    public string $q = '';
 
     protected $queryString = [
         'q' => ['except' => ''],
